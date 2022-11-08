@@ -1,0 +1,27 @@
+.add-product__btn{
+    font-size: .8rem;
+    padding: 1rem .2rem;
+    width: 150px;
+    margin: 0;
+}
+.products__group__product{
+    position: relative;
+}
+.icons__edit__delete{
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    display: flex;
+    gap: 1rem;
+}
+.icons__edit__delete span{
+    color: white;
+}
+@media screen and (min-width:768px){
+    .add-product__btn{
+        font-size: 1rem;
+    }
+}
+@media screen and (min-width:992px){
+
+}
