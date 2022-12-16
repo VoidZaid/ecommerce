@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tiendeo | login</title>
+    <title>Tiendeo | agregar producto</title>
 
 
     <!-- fonts & icons -->
@@ -34,51 +34,73 @@
 
     <!-- <font-icon-style></font-icon-style> -->
 
-    <!-- SOLO LOGIN -->
+    <!-- QUITA EL ICONO DE LOGIN -->
     <!-- <link rel="stylesheet" href="./assets/css/login/login.css"> -->
     <!-- SOLO ADD-PRODUCT FORM -->
     <link rel="stylesheet" href="./assets/css/add-products/add-form.css">
-    
+    <!-- SWEET ALERT -->
+    <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-bulma@4/bulma.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./assets/css/sweet-alert2/bulma.css">
 </head>
 <body>
-    <header-component></header-component>
+    <header-component href="./adm-product.html" icon="store" text="tienda"></header-component>
 
     <section class="add__container">
-        <form class="add__form" action="">
+        <form class="add__form" action="#">
             <div class="add__input__container">
                 <div class="add__input__file-drop">
                     <span class="material-icons-round">
                         image
                     </span>
-                    <p class="add__input__file-drop-messaje">arrastre para agregar una imagen para el producto</p>
+                    <p class="add__input__file-drop-messaje">Arrastre para agregar...</p>
                 </div>
-                <label for="file" class="add__input__file-label"> Selecciona una imagen
+                <label for="product__img" class="add__input__file-label"> Selecciona una imagen
                     <span class="material-icons-round add__input__file-label__icon">
                         file_upload
                     </span>
                 </label>
-                <input type="file" class="add__input__file input__shadow" id="file">
+                <input type="file" class="add__input__file input__shadow" id="product__img">
+                <div class="uploaded__card btn">
+                    <!-- <img class="uploaded__card-img" src="" alt="">
+                    <span class="uploaded__card-name">mndo de nuevo.img</span>
+                    <span class="material-icons-round uploaded__card-icon">
+                        cancel
+                    </span> -->
+                </div>
             </div>
-            <div class="add__input__container">
-                <input type="text" placeholder="Categoria" class="add__input__category input__shadow">
+            <div class="add__input__container inputCon">
+                <input type="text" placeholder=" " class="add__input__category input__shadow input" id="product__category" data-inproduct="category">
+                <label class="inputLabel" for="product__category">Categoria</label>
+                <span class="input__err-mess">* hola mundo</span>
             </div>
-            <div class="add__input__container">
-                <input type="text" placeholder="Nombre de producto" class="add__input__product-name input__shadow">
+            <div class="add__input__container inputCon">
+                <input type="text" placeholder=" " class="add__input__product-name input__shadow input" id="product__name" data-inproduct="productName">
+                <label class="inputLabel" for="product__name">Nombre de producto</label>
+                <span class="input__err-mess">* hola mundo</span>
             </div>
-            <div class="add__input__container">
-                <input type="text" placeholder="Precio del producto" class="add__input__price input__shadow">
+            <div class="add__input__container inputCon">
+                <input type="text" placeholder=" " class="add__input__price input__shadow input" id="product__price" data-inproduct="price">
+                <label class="inputLabel" for="product__price">Precio del producto</label>
+                <span class="input__err-mess">* hola mundo</span>
             </div>
-            <div class="add__input__container">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Descripcion del producto" class="add__input__description input__shadow"></textarea>
+            <div class="add__input__container inputCon">
+                <textarea name="" id="product__description" cols="30" rows="10" placeholder=" " class="add__input__description input__shadow input" data-inproduct="description"></textarea>
+                <label class="inputLabel" for="product__description">Descripcion del producto</label>
+                <span class="input__err-mess">* hola mundo</span>
             </div>
-            <input type="submit" name="" id="" class="add__input__submit btn">
+            <button type="button" name="" id="product__btn" class="add__input__submit btn">Enviar</button>
         </form>
     </section>
 
-    <footer-component></footer-component>
-
+    <!-- sweet alert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
      <!-- <script src="./assets/js/fontIconStyle.js"></script> -->
      <script src="./assets/js/headerComponent.js"></script>
      <script src="./assets/js/footerComponent.js"></script>
+
+     <script type="module" src="./assets/js/controllers/products.form.controller.js"></script>
+
+     <script src="./assets/js/controllers/redirect.controller.js"></script>
+     <script type="module" src="./assets/js/controllers/searcher.controller.js"></script>
 </body>
 </html>

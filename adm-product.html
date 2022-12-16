@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tiendeo | agregar producto</title>
+    <title>Tiendeo | administrar producto</title>
 
 
     <!-- fonts & icons -->
@@ -38,7 +38,8 @@
     <link rel="stylesheet" href="./assets/css/login/login.css">
     <!-- SOLO ADD PRODUCT -->
     <link rel="stylesheet" href="./assets/css/add-products/add-products.css">
-    
+    <!-- SWEET ALERT -->
+    <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-bulma@4/bulma.css" rel="stylesheet"/>
 </head>
 <body>
     <header-component></header-component>
@@ -49,312 +50,18 @@
             <section class="products__group-head">
                 <h2 class="products__group__title">Productos</h2>
                 <button class="add-product__btn btn">
-                    <a href="./add-product.html">Agregar producto</a>
+                    <a href="./add-product.html">Agregar</a>
+                    <span class="material-icons-round textAnimation">
+                        add
+                    </span>
                 </button>
             </section>
 
 
             <!-- products items REPEAT-->
             <section class="products__group-items-container">
-                <div class="products__group__product">
-                    <img class="products__group__product-img" src="./assets/img/star_01.png" alt="">
-                    <div class="products__group__product__info-container">
-                        <h3 class="products__group__product__info-title">Tasa stromtrooper</h3>
-                        <div class="products__group__product__info-price">S/ 20.00</div>
-                        <button class="products__group__product__info-watch">
-                            <a href="">Ver producto</a>
-                        </button>
-                    </div>
-                    <div class="icons__edit__delete">
-                        <span class="material-icons-round">
-                            delete
-                        </span>
-                        <span class="material-icons-round">
-                            edit
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="products__group__product">
-                    <img class="products__group__product-img" src="./assets/img/star_02.png" alt="">
-                    <div class="products__group__product__info-container">
-                        <h3 class="products__group__product__info-title">Muñeco DarkVader</h3>
-                        <div class="products__group__product__info-price">S/ 20.00</div>
-                        <button class="products__group__product__info-watch">
-                            <a href="">Ver producto</a>
-                        </button>
-                    </div>
-                    <div class="icons__edit__delete">
-                        <span class="material-icons-round">
-                            delete
-                        </span>
-                        <span class="material-icons-round">
-                            edit
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="products__group__product">
-                    <img class="products__group__product-img" src="./assets/img/star_03.png" alt="">
-                    <div class="products__group__product__info-container">
-                        <h3 class="products__group__product__info-title">Muñeco Yoda</h3>
-                        <div class="products__group__product__info-price">S/ 20.00</div>
-                        <button class="products__group__product__info-watch">
-                            <a href="">Ver producto</a>
-                        </button>
-                    </div>
-                    <div class="icons__edit__delete">
-                        <span class="material-icons-round">
-                            delete
-                        </span>
-                        <span class="material-icons-round">
-                            edit
-                        </span>
-                    </div>
-                </div>
-
-                <div class="products__group__product">
-                    <img class="products__group__product-img" src="./assets/img/star_04.png" alt="">
-                    <div class="products__group__product__info-container">
-                        <h3 class="products__group__product__info-title">Muñeco soldado stromtrooper</h3>
-                        <div class="products__group__product__info-price">S/ 20.00</div>
-                        <button class="products__group__product__info-watch">
-                            <a href="">Ver producto</a>
-                        </button>
-                    </div>
-                    <div class="icons__edit__delete">
-                        <span class="material-icons-round">
-                            delete
-                        </span>
-                        <span class="material-icons-round">
-                            edit
-                        </span>
-                    </div>
-                </div>
-                <div class="products__group__product">
-                    <img class="products__group__product-img" src="./assets/img/star_05.png" alt="">
-                    <div class="products__group__product__info-container">
-                        <h3 class="products__group__product__info-title">Muñeco soldado stromtrooper</h3>
-                        <div class="products__group__product__info-price">S/ 20.00</div>
-                        <button class="products__group__product__info-watch">
-                            <a href="">Ver producto</a>
-                        </button>
-                    </div>
-                    <div class="icons__edit__delete">
-                        <span class="material-icons-round">
-                            delete
-                        </span>
-                        <span class="material-icons-round">
-                            edit
-                        </span>
-                    </div>
-                </div>
-                <div class="products__group__product">
-                    <img class="products__group__product-img" src="./assets/img/star_06.png" alt="">
-                    <div class="products__group__product__info-container">
-                        <h3 class="products__group__product__info-title">Muñeco soldado stromtrooper</h3>
-                        <div class="products__group__product__info-price">S/ 20.00</div>
-                        <button class="products__group__product__info-watch">
-                            <a href="">Ver producto</a>
-                        </button>
-                    </div>
-                    <div class="icons__edit__delete">
-                        <span class="material-icons-round">
-                            delete
-                        </span>
-                        <span class="material-icons-round">
-                            edit
-                        </span>
-                    </div>
-                </div>
-                <div class="products__group__product">
-                    <img class="products__group__product-img" src="./assets/img/console_01.png" alt="">
-                    <div class="products__group__product__info-container">
-                        <h3 class="products__group__product__info-title">Mando consola</h3>
-                        <div class="products__group__product__info-price">S/ 100.00</div>
-                        <button class="products__group__product__info-watch">
-                            <a href="">Ver producto</a>
-                        </button>
-                    </div>
-                    <div class="icons__edit__delete">
-                        <span class="material-icons-round">
-                            delete
-                        </span>
-                        <span class="material-icons-round">
-                            edit
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="products__group__product">
-                    <img class="products__group__product-img" src="./assets/img/console_02.png" alt="">
-                    <div class="products__group__product__info-container">
-                        <h3 class="products__group__product__info-title">Consola + mando</h3>
-                        <div class="products__group__product__info-price">S/ 1200.00</div>
-                        <button class="products__group__product__info-watch">
-                            <a href="">Ver producto</a>
-                        </button>
-                    </div>
-                    <div class="icons__edit__delete">
-                        <span class="material-icons-round">
-                            delete
-                        </span>
-                        <span class="material-icons-round">
-                            edit
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="products__group__product">
-                    <img class="products__group__product-img" src="./assets/img/console_03.png" alt="">
-                    <div class="products__group__product__info-container">
-                        <h3 class="products__group__product__info-title">Consola Classic Nintendo</h3>
-                        <div class="products__group__product__info-price">S/ 700.00</div>
-                        <button class="products__group__product__info-watch">
-                            <a href="">Ver producto</a>
-                        </button>
-                    </div>
-                    <div class="icons__edit__delete">
-                        <span class="material-icons-round">
-                            delete
-                        </span>
-                        <span class="material-icons-round">
-                            edit
-                        </span>
-                    </div>
-                </div>
-
-                <div class="products__group__product">
-                    <img class="products__group__product-img" src="./assets/img/console_04.png" alt="">
-                    <div class="products__group__product__info-container">
-                        <h3 class="products__group__product__info-title">Mandos de consola Color</h3>
-                        <div class="products__group__product__info-price">S/ 120.00</div>
-                        <button class="products__group__product__info-watch">
-                            <a href="">Ver producto</a>
-                        </button>
-                    </div>
-                    <div class="icons__edit__delete">
-                        <span class="material-icons-round">
-                            delete
-                        </span>
-                        <span class="material-icons-round">
-                            edit
-                        </span>
-                    </div>
-                </div>
-                <div class="products__group__product">
-                    <img class="products__group__product-img" src="./assets/img/console_05.png" alt="">
-                    <div class="products__group__product__info-container">
-                        <h3 class="products__group__product__info-title">Mandos de consola Color</h3>
-                        <div class="products__group__product__info-price">S/ 120.00</div>
-                        <button class="products__group__product__info-watch">
-                            <a href="">Ver producto</a>
-                        </button>
-                    </div>
-                    <div class="icons__edit__delete">
-                        <span class="material-icons-round">
-                            delete
-                        </span>
-                        <span class="material-icons-round">
-                            edit
-                        </span>
-                    </div>
-                </div>
-                <div class="products__group__product">
-                    <img class="products__group__product-img" src="./assets/img/console_06.png" alt="">
-                    <div class="products__group__product__info-container">
-                        <h3 class="products__group__product__info-title">Mandos de consola Color</h3>
-                        <div class="products__group__product__info-price">S/ 120.00</div>
-                        <button class="products__group__product__info-watch">
-                            <a href="">Ver producto</a>
-                        </button>
-                    </div>
-                    <div class="icons__edit__delete">
-                        <span class="material-icons-round">
-                            delete
-                        </span>
-                        <span class="material-icons-round">
-                            edit
-                        </span>
-                    </div>
-                </div>
-
-                <div class="products__group__product">
-                    <img class="products__group__product-img" src="./assets/img/diversous_01.png" alt="">
-                    <div class="products__group__product__info-container">
-                        <h3 class="products__group__product__info-title">Camisa Atari</h3>
-                        <div class="products__group__product__info-price">S/ 60.00</div>
-                        <button class="products__group__product__info-watch">
-                            <a href="">Ver producto</a>
-                        </button>
-                    </div>
-                    <div class="icons__edit__delete">
-                        <span class="material-icons-round">
-                            delete
-                        </span>
-                        <span class="material-icons-round">
-                            edit
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="products__group__product">
-                    <img class="products__group__product-img" src="./assets/img/diversous_02.png" alt="">
-                    <div class="products__group__product__info-container">
-                        <h3 class="products__group__product__info-title">Camisa gamer</h3>
-                        <div class="products__group__product__info-price">S/ 60.00</div>
-                        <button class="products__group__product__info-watch">
-                            <a href="">Ver producto</a>
-                        </button>
-                    </div>
-                    <div class="icons__edit__delete">
-                        <span class="material-icons-round">
-                            delete
-                        </span>
-                        <span class="material-icons-round">
-                            edit
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="products__group__product">
-                    <img class="products__group__product-img" src="./assets/img/diversous_03.png" alt="">
-                    <div class="products__group__product__info-container">
-                        <h3 class="products__group__product__info-title">Muñeco Sonic</h3>
-                        <div class="products__group__product__info-price">S/ 40.00</div>
-                        <button class="products__group__product__info-watch">
-                            <a href="">Ver producto</a>
-                        </button>
-                    </div>
-                    <div class="icons__edit__delete">
-                        <span class="material-icons-round">
-                            delete
-                        </span>
-                        <span class="material-icons-round">
-                            edit
-                        </span>
-                    </div>
-                </div>
-
-                <div class="products__group__product">
-                    <img class="products__group__product-img" src="./assets/img/diversous_04.png" alt="">
-                    <div class="products__group__product__info-container">
-                        <h3 class="products__group__product__info-title">Control + consola</h3>
-                        <div class="products__group__product__info-price">S/ 500.00</div>
-                        <button class="products__group__product__info-watch">
-                            <a href="">Ver producto</a>
-                        </button>
-                    </div>
-                    <div class="icons__edit__delete">
-                        <span class="material-icons-round">
-                            delete
-                        </span>
-                        <span class="material-icons-round">
-                            edit
-                        </span>
-                    </div>
-                </div>
-                <div class="products__group__product">
+                          
+                <!-- <div class="products__group__product">
                     <img class="products__group__product-img" src="./assets/img/diversous_05.png" alt="">
                     <div class="products__group__product__info-container">
                         <h3 class="products__group__product__info-title">Control + consola</h3>
@@ -371,33 +78,24 @@
                             edit
                         </span>
                     </div>
-                </div>
-                <div class="products__group__product">
-                    <img class="products__group__product-img" src="./assets/img/diversous_06.png" alt="">
-                    <div class="products__group__product__info-container">
-                        <h3 class="products__group__product__info-title">Control + consola</h3>
-                        <div class="products__group__product__info-price">S/ 500.00</div>
-                        <button class="products__group__product__info-watch">
-                            <a href="">Ver producto</a>
-                        </button>
-                    </div>
-                    <div class="icons__edit__delete">
-                        <span class="material-icons-round">
-                            delete
-                        </span>
-                        <span class="material-icons-round">
-                            edit
-                        </span>
-                    </div>
-                </div>
+                </div> -->
+               
             </section>
         </section>
     </main>
 
     <footer-component></footer-component>
 
+    <!-- sweet alert 2 -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
      <!-- <script src="./assets/js/fontIconStyle.js"></script> -->
      <script src="./assets/js/headerComponent.js"></script>
      <script src="./assets/js/footerComponent.js"></script>
+     
+     <script type="module" src="./assets/js/controllers/footer.controller.js"></script>
+
+     <script type="module" src="./assets/js/controllers/adm.elements.controller.js"></script>
+     <script src="./assets/js/controllers/redirect.controller.js"></script>
+     <script type="module" src="./assets/js/controllers/searcher.controller.js"></script>
 </body>
 </html>

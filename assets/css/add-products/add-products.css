@@ -16,6 +16,12 @@
 }
 .icons__edit__delete span{
     color: white;
+    cursor: pointer;
+    transition: color .3s ease, transform .3s;
+}
+.icons__edit__delete span:hover{
+    color: var(--active);
+    transform: scale(1.3);
 }
 @media screen and (min-width:768px){
     .add-product__btn{

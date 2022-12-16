@@ -1,5 +1,5 @@
 .footer__rodapie{
-    background-color: white;
+    background-color: var(--backBody);
     margin: 0;
     padding: 1.5rem 0 1rem;
 }

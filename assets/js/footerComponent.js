@@ -21,15 +21,19 @@ class footerComponent extends HTMLElement{
                 </nav>
                 <section class="footer__contact">
                     <h3 class="footer__contact-title">Hable con nosotros</h3>
-                    <form action="" class="footer__contact__form">
-                        <div class="footer__contact__form__container">
-                            <input class="footer__contact__form__input" type="text" placeholder="Nombre">
+                    <form action="" class="footer__contact__form" id="contact__form">
+                        <div class="footer__contact__form__container inputCon">
+                            <input class="footer__contact__form__input input" type="text" placeholder=" " id="nombre" minlength="5" maxlength="40" required data-input="name">
+                            <label class="inputLabel" for="nombre">Nombre</label>
+                            <span class="input__err-mess">* hola mundo</span>
                         </div>
-                        <div class="footer__contact__form__container">
-                            <textarea class="footer__contact__form__textarea" name="" id="" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
+                        <div class="footer__contact__form__container inputCon">
+                            <textarea class="footer__contact__form__textarea input" name="" id="mensaje" cols="30" rows="10" placeholder=" " minlength="10" maxlength="120" required data-input="message"></textarea>
+                            <label class="inputLabel" for="mensaje">Escribe tu mensaje</label>
+                            <span class="input__err-mess">* hola mundo</span>
                         </div>
-                        <div class="footer__contact__form__container">
-                            <button class="footer__contact__form__submit btn" type="submit"><a href="#">Enviar mensaje</a> </button>
+                        <div class="footer__contact__form__container inputCon">
+                            <button class="footer__contact__form__submit btn" type="submit" id="send">Enviar mensaje</button>
                         </div>
                     </form>
                 </section>
@@ -40,6 +44,7 @@ class footerComponent extends HTMLElement{
             </section>
 
         </footer>
+
         `;
     }
 

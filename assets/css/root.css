@@ -1,11 +1,24 @@
 :root{
-    --text: #010101;
+    --backHeadFood : #080808;
+    --backBody: #0D0D0D;
+
+    --inputColor: #595959;
+    --labelPlace: #BFBFBF;
+
+    --inputErrMess: #df2525;
+
+    --text: #F2F2F2;
+    --active: #2a7ae4;
 
     --bannerTitle: #eee;
 
-    --bgBtn: #2A7AE4;
+    --btnDropColor: #262626;
 
-    --productTitle: #464646;
+    /* --bgBtn: #2A7AE4; */
+    --bgBtn: #2a7ae4;
+    --bgAnimatedBtn: black;
+
+    --productTitle: #F2F2F2;
 
     --footerBg: #EAF2FD;
 

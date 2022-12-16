@@ -1,5 +1,5 @@
 .header__nav{
-    background-color: white;
+    background-color: var(--backHeadFood);
     padding: .5rem;
     /* margin: 1rem; */
     /* width: 100%; */
