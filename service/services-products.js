@@ -1,7 +1,7 @@
-const productsList = () =>fetch('http://localhost:3000/products').then((response)=>response.json());
+const productsList = () =>fetch('https://alurageek-voidzaid.onrender.com/products').then((response)=>response.json());
 
 const createProduct = (name,imgUrl,price,id,alt,section,description)=>{
-    return fetch('http://localhost:3000/products',{
+    return fetch('https://alurageek-voidzaid.onrender.com/products',{
         method: "POST",
         headers: {
             'Content-Type': 'application/json'
@@ -19,19 +19,19 @@ const createProduct = (name,imgUrl,price,id,alt,section,description)=>{
 }
 
 const deleteProduct = (id)=>{
-    return fetch(`http://localhost:3000/products/${id}`,{
+    return fetch(`https://alurageek-voidzaid.onrender.com/products/${id}`,{
         method: "DELETE",
     })
 }
 
 const getProduct = (id)=>{
-    return fetch(`http://localhost:3000/products/${id}`).then((respuesta)=>respuesta.json())
+    return fetch(`https://alurageek-voidzaid.onrender.com/products/${id}`).then((respuesta)=>respuesta.json())
     .catch((err)=> console.log(err));
         
 }
 
 const updateProduct= (name,imgUrl,price,id,alt,section,description)=>{
-    return fetch(`http://localhost:3000/products/${id}`,{
+    return fetch(`https://alurageek-voidzaid.onrender.com/products/${id}`,{
         method: 'PUT',
         headers: {
             'Content-Type':'application/json'
