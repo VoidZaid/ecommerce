@@ -36,7 +36,7 @@ const createAdmElement = (src,id,nam,price)=>{
         }
     })
     editIcon.addEventListener('click',()=>{
-        window.location.href=`/add-product.html?id=${id}`;
+        window.location.href=`/ecommerce/add-product.html?id=${id}`;
     })
     return div;
 }
