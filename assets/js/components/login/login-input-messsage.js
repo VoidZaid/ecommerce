@@ -2,7 +2,7 @@ const regEx={
     email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
     password: /^[a-zA-ZÀ-ÿ0-9\.\-_\s]{8,15}$/,
     category:/^[a-z0-9]{8,9}$/,
-    productName:/^[a-zA-Z0-9-_\s]{1,30}$/,
+    productName:/^[a-zA-ZÀ-ÿ0-9-_\s+-$]{1,30}$/,
     price:/^[0-9]{1,4}$/,
     description:/^[a-zA-ZÀ-ÿ0-9-_\s\.\,+@!¡?¿()]{1,350}$/
 }
